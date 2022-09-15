@@ -1,0 +1,10 @@
+Frontend
+  Profile pic
+  Dates
+  Testing
+  Typing demo
+  Deleting
+Add backend
+  Database
+  API
+  Authentication
