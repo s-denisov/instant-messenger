@@ -9,17 +9,16 @@ npm install eslint-config-airbnb-typescript \
 
 module.exports = {
   env: {
-    browser: true,
+    browser: false,
     es2021: true,
   },
   extends: [
-    'plugin:react/recommended',
-    'airbnb',
+    'airbnb-base',
   ],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['airbnb-typescript'],
+      extends: ['airbnb-typescript/base'],
       parserOptions: {
         project: './tsconfig.json',
       },
@@ -30,7 +29,6 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'react',
     'only-warn',
   ],
   rules: {
