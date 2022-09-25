@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form, Modal } from 'react-bootstrap';
+import { useForm } from 'react-hook-form';
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function SignUp() {
