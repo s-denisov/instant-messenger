@@ -1,15 +1,15 @@
-import { createSlice, nanoid, PayloadAction } from "@reduxjs/toolkit";
-import { RootState } from "../../app/store";
+import { createSlice, nanoid, PayloadAction } from '@reduxjs/toolkit';
+import { RootState } from '../../app/store';
 
 interface Contact {
   id: string;
   name: string;
 }
 
-const initialContacts: Contact[] = [{ id: "12345", name: "A" }];
+const initialContacts: Contact[] = [{ id: '12345', name: 'A' }];
 
 const contactsSlice = createSlice({
-  name: "contacts",
+  name: 'contacts',
   initialState: { currentContacts: initialContacts },
   reducers: {
     addContact: {
@@ -26,10 +26,8 @@ const contactsSlice = createSlice({
   },
 });
 
-export const totalContacts = (state: RootState) =>
-  state.contacts.currentContacts.length;
-export const getContact = (i: number) => (state: RootState) =>
-  state.contacts.currentContacts[i];
+export const totalContacts = (state: RootState) => state.contacts.currentContacts.length;
+export const getContact = (i: number) => (state: RootState) => state.contacts.currentContacts[i];
 
 export const { addContact } = contactsSlice.actions;
 

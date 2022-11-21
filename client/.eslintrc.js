@@ -34,5 +34,6 @@ module.exports = {
     'only-warn',
   ],
   rules: {
+    'react/jsx-props-no-spreading': 'off'
   },
 };

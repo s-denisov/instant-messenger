@@ -1,0 +1,2 @@
+message (who sent?) >---- chat (two users, may be pending (should state requested by whom) or archived)
+User: profile pic

@@ -16,12 +16,6 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-const port = 3001;
-
-const server = app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
-});
-
 app.get('/', (req: Request, res: Response) => {
   res.send('Express + TypeScript Server');
 });
